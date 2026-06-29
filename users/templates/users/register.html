@@ -5,5 +5,6 @@
         {% csrf_token %}
         <button type="submit">Register</button>
     </form>
+    <a href="{% url "accounts:login" %}">login</a>
 
 {% endblock content %}

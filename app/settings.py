@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 import os
+from django.urls import reverse_lazy
 from dotenv import load_dotenv
 
 
@@ -127,3 +128,5 @@ STATIC_URL = "static/"
 
 
 AUTH_USER_MODEL = 'users.User'
+
+LOGIN_URL = reverse_lazy('accounts:login')
